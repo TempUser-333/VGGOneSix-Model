@@ -1,0 +1,213 @@
+10952    20       INFO MainThread          trigger_reload   12:50:00 431.9500923156738
+19632    20       INFO MainThread          trigger_reload   12:53:09 852.2765636444092
+12648    20       INFO MainThread          trigger_reload   12:59:36 540.1656627655029
+3652    20       INFO MainThread          trigger_reload   13:02:28 298.351526260376
+11160    20       INFO MainThread          trigger_reload   13:03:16 717.7293300628662
+3444    20       INFO MainThread          trigger_reload   13:03:36 201.16567611694336
+18160    20       INFO MainThread          trigger_reload   13:04:14 430.13668060302734
+19140    20       INFO MainThread          trigger_reload   13:04:47 113.25907707214355
+3896    20       INFO MainThread          trigger_reload   13:05:35 118.79682540893555
+18200    20       INFO MainThread          trigger_reload   13:06:23 422.2240447998047
+1656    20       INFO MainThread          trigger_reload   13:07:10 428.67326736450195
+5912    20       INFO MainThread          trigger_reload   13:07:21 485.98432540893555
+24212    20       INFO MainThread          trigger_reload   13:09:15 940.4101371765137
+20744    20       INFO MainThread          trigger_reload   13:19:23 257.7216625213623
+9492    20       INFO MainThread          trigger_reload   13:20:01 266.74437522888184
+14456    20       INFO MainThread          trigger_reload   13:22:18 127.50840187072754
+14468    20       INFO MainThread          trigger_reload   13:33:41 859.1575622558594
+23256    20       INFO MainThread          trigger_reload   13:38:06 370.42832374572754
+20052    40      ERROR   Thread-1          log_response   14:58:40 67.08574295043945
+Traceback (most recent call last):
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\VGGOneSixApp\views.py", line 24, in post
+    res = TrainAndTestVGGOneSixModel().test_model(request.data['image_path'])
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\train_and_test_model.py", line 23, in test_model
+    img = image.load_img(img_path, target_size=(224, 224))
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\keras\utils\image_utils.py", line 393, in load_img
+    with open(path, 'rb') as f:
+OSError: [Errno 22] Invalid argument: 'C:\\Us**\\91**\\Down**\\titanic.png'
+20052    10      DEBUG   Thread-1                call   14:59:32 150.02131462097168
+20052    10      DEBUG   Thread-1                call   14:59:32 164.78896141052246
+20052    10      DEBUG   Thread-1                call   14:59:32 164.78896141052246
+20052    10      DEBUG   Thread-1                call   14:59:32 164.78896141052246
+20052    40      ERROR   Thread-1          log_response   14:59:32 305.68552017211914
+Traceback (most recent call last):
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\VGGOneSixApp\views.py", line 24, in post
+    res = TrainAndTestVGGOneSixModel().test_model(request.data['image_path'])
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\train_and_test_model.py", line 27, in test_model
+    img_arr = image.img_to_arr(img)
+AttributeError: module 'keras.api._v2.keras.preprocessing.image' has no attribute 'img_to_arr'
+20052    20       INFO MainThread          trigger_reload   15:01:36 427.87671089172363
+9872    10      DEBUG   Thread-1                call   15:01:45 389.72973823547363
+9872    10      DEBUG   Thread-1                call   15:01:45 389.72973823547363
+9872    10      DEBUG   Thread-1                call   15:01:45 389.72973823547363
+9872    10      DEBUG   Thread-1                call   15:01:45 389.72973823547363
+9872    20       INFO   Thread-1          test_model   15:01:45 419.03138160705566
+9872    10      DEBUG   Thread-1          test_model   15:01:45 419.03138160705566
+9872    40      ERROR   Thread-1          log_response   15:01:45 495.40042877197266
+Traceback (most recent call last):
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\VGGOneSixApp\views.py", line 24, in post
+    res = TrainAndTestVGGOneSixModel().test_model(request.data['image_path'])
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\train_and_test_model.py", line 30, in test_model
+    expnd_arr = np.array(img_arr,
+TypeError: array() got an unexpected keyword argument 'axis'
+9872    20       INFO MainThread          trigger_reload   15:02:45 745.9096908569336
+24620    10      DEBUG   Thread-1                call   15:02:52 547.2860336303711
+24620    10      DEBUG   Thread-1                call   15:02:52 548.285961151123
+24620    10      DEBUG   Thread-1                call   15:02:52 548.285961151123
+24620    10      DEBUG   Thread-1                call   15:02:52 548.285961151123
+24620    20       INFO   Thread-1          test_model   15:02:52 567.3046112060547
+24620    10      DEBUG   Thread-1          test_model   15:02:52 567.3046112060547
+24620    40      ERROR   Thread-1          log_response   15:02:52 626.0695457458496
+Traceback (most recent call last):
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\VGGOneSixApp\views.py", line 24, in post
+    res = TrainAndTestVGGOneSixModel().test_model(request.data['image_path'])
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\src\train_and_test_model.py", line 30, in test_model
+    expnd_arr = np.array(img_arr,
+TypeError: array() got an unexpected keyword argument 'axis'
+24620    20       INFO MainThread          trigger_reload   15:08:04 140.028715133667
+20052    20       INFO MainThread          trigger_reload   15:08:20 596.9860553741455
+20668    20       INFO MainThread          trigger_reload   15:08:38 476.0892391204834
+24948    10      DEBUG   Thread-1                call   15:11:44 474.46203231811523
+24948    10      DEBUG   Thread-1                call   15:11:44 475.4223823547363
+24948    10      DEBUG   Thread-1                call   15:11:44 475.4223823547363
+24948    10      DEBUG   Thread-1                call   15:11:44 475.4223823547363
+24948    20       INFO   Thread-1          test_model   15:11:44 491.4255142211914
+24948    10      DEBUG   Thread-1          test_model   15:11:44 492.4635887145996
+24948    20       INFO   Thread-1          test_model   15:11:44 493.46065521240234
+24948    10      DEBUG   Thread-1          test_model   15:11:44 493.46065521240234
+24948    20       INFO   Thread-1          train_model   15:12:07 51.51033401489258
+24948    20       INFO   Thread-1          test_model   15:12:18 635.9062194824219
+24948    10      DEBUG   Thread-1          test_model   15:12:18 635.9062194824219
+24948    20       INFO   Thread-1          test_model   15:12:18 664.3762588500977
+24948    40      ERROR   Thread-1          log_response   15:12:19 105.17621040344238
+Traceback (most recent call last):
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\91807\TrainAndTest_Django_VGGOneSix_Model_2\venv\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'str'>`
+24948    20       INFO MainThread          trigger_reload   15:13:20 361.64116859436035
+7688    10      DEBUG   Thread-1                call   15:14:45 829.2243480682373
+7688    10      DEBUG   Thread-1                call   15:14:45 837.8748893737793
+7688    10      DEBUG   Thread-1                call   15:14:45 837.8748893737793
+7688    10      DEBUG   Thread-1                call   15:14:45 837.8748893737793
+7688    20       INFO   Thread-1          test_model   15:14:45 909.3773365020752
+7688    10      DEBUG   Thread-1          test_model   15:14:45 910.3755950927734
+7688    20       INFO   Thread-1          test_model   15:14:45 931.3693046569824
+7688    10      DEBUG   Thread-1          test_model   15:14:45 931.3693046569824
+7688    20       INFO   Thread-1          train_model   15:14:54 92.05126762390137
+7688    20       INFO   Thread-1          test_model   15:14:59 73.62937927246094
+7688    10      DEBUG   Thread-1          test_model   15:14:59 73.62937927246094
+7688    20       INFO   Thread-1          test_model   15:14:59 74.62000846862793
+7688    20       INFO MainThread          trigger_reload   15:15:21 920.1772212982178
+24288    10      DEBUG   Thread-1                call   15:15:48 945.0175762176514
+24288    10      DEBUG   Thread-1                call   15:15:48 946.0163116455078
+24288    10      DEBUG   Thread-1                call   15:15:48 946.0163116455078
+24288    10      DEBUG   Thread-1                call   15:15:48 946.0163116455078
+24288    20       INFO   Thread-1          test_model   15:15:48 964.012861251831
+24288    10      DEBUG   Thread-1          test_model   15:15:48 964.012861251831
+24288    20       INFO   Thread-1          test_model   15:15:48 965.0123119354248
+24288    10      DEBUG   Thread-1          test_model   15:15:48 965.0123119354248
+24288    20       INFO   Thread-1          train_model   15:15:55 559.0522289276123
+24288    20       INFO   Thread-1          test_model   15:16:00 465.076208114624
+24288    10      DEBUG   Thread-1          test_model   15:16:00 465.076208114624
+24288    20       INFO   Thread-1          test_model   15:16:00 466.0823345184326
+24288    20       INFO MainThread          trigger_reload   15:17:11 116.60099029541016
+18896    10      DEBUG   Thread-1                call   15:17:50 54.737091064453125
+18896    10      DEBUG   Thread-1                call   15:17:50 55.72342872619629
+18896    10      DEBUG   Thread-1                call   15:17:50 55.72342872619629
+18896    10      DEBUG   Thread-1                call   15:17:50 55.72342872619629
+18896    20       INFO   Thread-1          test_model   15:17:50 174.63016510009766
+18896    10      DEBUG   Thread-1          test_model   15:17:50 175.6300926208496
+18896    20       INFO   Thread-1          test_model   15:17:50 178.62915992736816
+18896    10      DEBUG   Thread-1          test_model   15:17:50 178.62915992736816
+18896    20       INFO   Thread-1          train_model   15:18:03 734.7304821014404
+18896    20       INFO   Thread-1          test_model   15:18:09 666.9974327087402
+18896    10      DEBUG   Thread-1          test_model   15:18:09 666.9974327087402
+18896    20       INFO   Thread-1          test_model   15:18:09 679.0130138397217
+18896    20       INFO MainThread          trigger_reload   15:18:39 948.6269950866699
+23344    10      DEBUG   Thread-1                call   15:19:15 856.7898273468018
+23344    10      DEBUG   Thread-1                call   15:19:15 858.7884902954102
+23344    10      DEBUG   Thread-1                call   15:19:15 858.7884902954102
+23344    10      DEBUG   Thread-1                call   15:19:15 858.7884902954102
+23344    20       INFO   Thread-1          test_model   15:19:15 906.7862033843994
+23344    10      DEBUG   Thread-1          test_model   15:19:15 906.7862033843994
+23344    20       INFO   Thread-1          test_model   15:19:15 909.7874164581299
+23344    10      DEBUG   Thread-1          test_model   15:19:15 909.7874164581299
+23344    20       INFO   Thread-1          train_model   15:19:21 156.29982948303223
+23344    20       INFO   Thread-1          test_model   15:19:21 929.6267032623291
+23344    10      DEBUG   Thread-1          test_model   15:19:21 929.6267032623291
+23344    20       INFO   Thread-1          test_model   15:19:21 929.6267032623291
+23344    20       INFO MainThread          trigger_reload   15:20:22 508.9535713195801
